@@ -80,7 +80,7 @@ public class StudentRecordMGMT {
         Student student;
 
         while (cont == 1) {
-            System.out.print("\n 1. Enter Student. \n 2. Display Student \n 3. Display All Student \n : ");
+            System.out.print("\n 1. Enter Student. \n 2. Display Student \n 3. Display All Student \n 4. Exit \n : ");
             int ch = inp.nextInt();
 
             switch (ch) {
@@ -113,14 +113,13 @@ public class StudentRecordMGMT {
                 case 3:
                     srs.displayAllStudents();
                     break;
-                
+                case 4:
+                    cont = 0;
+                    break;
                 default:
                     System.out.println("Choose Valid Option...");
                     break;
             }
-
-            System.out.print("Continue ? (1/0): ");
-            cont = inp.nextInt();
         }
         inp.close();
     }

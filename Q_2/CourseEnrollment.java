@@ -89,10 +89,10 @@ public class CourseEnrollment {
     Enrollment enrollment;
 
     CourseEnrollment(int studentCount, int maxCourses) {
-        courseCatalog = new Course[]{
-            new Course(1, "C", 3),
-            new Course(2, "DSA", 4),
-            new Course(3, "GO", 3)
+        courseCatalog = new Course[] {
+                new Course(1, "C", 3),
+                new Course(2, "DSA", 4),
+                new Course(3, "GO", 3)
         };
         enrollment = new Enrollment(studentCount, maxCourses);
     }
