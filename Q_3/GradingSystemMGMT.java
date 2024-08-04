@@ -19,7 +19,6 @@ class Student {
         return name;
     }
 
-    @Override
     public String toString() {
         return "Student ID: " + studentID + ", Name: " + name;
     }
@@ -48,7 +47,6 @@ class Grade {
         return grade;
     }
 
-    @Override
     public String toString() {
         return "Student ID: " + studentID + ", Course ID: " + courseID + ", Grade: " + grade;
     }
